@@ -1,5 +1,6 @@
 :root {
 	--fg: rgb(40, 50, 50);
+	--fg-shadow: rgba(40, 50, 50, 0.5);
 	--bg: rgb(235, 235, 235);
 	--accent: darkgrey;
 	cursor: crosshair;
@@ -24,7 +25,7 @@ body {
 	padding-bottom: 2rem;
 	background-color: var(--bg);
 	min-height: 96vh;
-	/*box-shadow: 0px 0px 16px var(--accent);*/
+	box-shadow: 0px 0px 24px black; 
 }
 
 @media only screen and (max-width: 1280px) {
@@ -39,7 +40,6 @@ a {
 }
 
 p {
-	color: black;
 	font-size: 40px;
 }
 
@@ -57,6 +57,7 @@ header h1 {
 	font-weight: normal;
 	margin-top: 0;
 	margin-bottom: 0;
+	text-shadow: 6px 6px 24px var(--fg-shadow);
 }
 
 h1, .home-header {
@@ -127,6 +128,10 @@ h1, .home-header {
 	font-weight: bold;
 }
 
+.nav-back a {
+	/*text-shadow: 0px 2px 8px var(--fg-shadow);*/
+}
+
 .flex-images {
 	display: flex;
 	flex-wrap: wrap;
@@ -134,9 +139,9 @@ h1, .home-header {
 
 .flex-images img {
 	width: 49%;
-	/*box-shadow: 0px 2px 6px var(--fg);*/
+	box-shadow: 0px 6px 24px var(--fg-shadow);
 	margin: 0.50%;
-	border-radius: 6px;
+	border-radius: 12px;
 }
 
 img {
